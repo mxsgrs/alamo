@@ -6,14 +6,14 @@
   <mat-form-field class="example-full-width">
     <mat-label>Status</mat-label>
     <mat-select>
-      <mat-option value="one">Pending</mat-option>
-      <mat-option value="two">In Progress</mat-option>
-      <mat-option value="two">Completed</mat-option>
+      @for(trackStatus of taskStatuses; track trackStatus; let i = $index) {
+        <mat-option [value]="i">{{trackStatus}}</mat-option>
+      }
     </mat-select>
   </mat-form-field>
   <mat-form-field class="example-full-width">
     <mat-label>Description</mat-label>
     <textarea matInput></textarea>
   </mat-form-field>
-  <button mat-flat-button>Ajouter</button>
+  <button mat-flat-button>Add</button>
 </form>

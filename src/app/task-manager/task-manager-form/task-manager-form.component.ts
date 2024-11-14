@@ -4,6 +4,7 @@ import { MatFormField, MatLabel} from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButton } from '@angular/material/button';
+import { TaskStatus } from '@models/task/task-status';
 
 @Component({
   selector: 'app-task-manager-form',
@@ -13,5 +14,5 @@ import { MatButton } from '@angular/material/button';
   styleUrl: './task-manager-form.component.css'
 })
 export class TaskManagerFormComponent {
-
+  taskStatuses = Object.values(TaskStatus);
 }
