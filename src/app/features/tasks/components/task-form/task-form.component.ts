@@ -4,15 +4,15 @@ import { MatFormField, MatLabel} from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButton } from '@angular/material/button';
-import { TaskStatus } from '@models/task/task-status';
+import { TaskStatus } from '../../models/task-status';
 
 @Component({
-  selector: 'app-task-manager-form',
+  selector: 'app-task-form',
   standalone: true,
   imports: [MatFormField, MatInput, MatOption, MatLabel, MatSelectModule, MatButton],
-  templateUrl: './task-manager-form.component.html',
-  styleUrl: './task-manager-form.component.css'
+  templateUrl: './task-form.component.html',
+  styleUrl: './task-form.component.css'
 })
-export class TaskManagerFormComponent {
+export class TaskFormComponent {
   taskStatuses = Object.values(TaskStatus);
 }

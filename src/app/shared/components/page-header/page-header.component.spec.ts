@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TaskManagerFormComponent } from './task-manager-form.component';
+import { PageHeaderComponent } from './page-header.component';
 
-describe('TaskManagerFormComponent', () => {
-  let component: TaskManagerFormComponent;
-  let fixture: ComponentFixture<TaskManagerFormComponent>;
+describe('PageHeaderComponent', () => {
+  let component: PageHeaderComponent;
+  let fixture: ComponentFixture<PageHeaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TaskManagerFormComponent]
+      imports: [PageHeaderComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TaskManagerFormComponent);
+    fixture = TestBed.createComponent(PageHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
