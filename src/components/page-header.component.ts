@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-page-header',
+  standalone: true,
   template: `
     <div class="page-header">
       <h1 class="title">{{ title }}</h1>
@@ -17,14 +18,14 @@ import { Component, Input } from '@angular/core';
     
     .title {
       font-size: 1.5rem;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1.5;
-      letter-spacing: -0.025em;
+      margin: 0;
     }
 
     .subtitle {
       color: #6c757d;
-      margin-top: 0.125rem;
+      margin: 0;
     }
   `]
 })

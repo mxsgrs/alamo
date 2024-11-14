@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
 import { Task } from '@models/task';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-task-manager-list',
   standalone: true,
-  imports: [],
+  imports: [MatListModule],
   templateUrl: './task-manager-list.component.html',
   styleUrl: './task-manager-list.component.css'
 })
 export class TaskManagerListComponent {
   tasks: Task[] = [
-    new Task(1, 'Task 1', 'Pending'),
-    new Task(2, 'Task 2', 'Completed'),
-    new Task(3, 'Task 3', 'In Progress')
+    new Task(1, 'Store new data', 'Pending'),
+    new Task(2, 'Finish latest sprint', 'Completed'),
+    new Task(3, 'Daily meeting', 'In Progress')
   ]
 }

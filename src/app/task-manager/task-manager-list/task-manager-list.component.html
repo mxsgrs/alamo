@@ -1,5 +1,8 @@
-<ul>
+<mat-list>
     @for(task of tasks; track task.id) {
-        <li>{{task.name}}</li>
+        <mat-list-item>
+          <span matListItemTitle>{{task.name}}</span>
+          <span matListItemLine>{{task.status}}</span>
+        </mat-list-item>
     }
-</ul>
+</mat-list>
