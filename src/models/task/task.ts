@@ -6,6 +6,6 @@ export class Task {
         public name: string,
         public description: string,
         public status: TaskStatus,
-        public dueDate?: Date
+        public creationDate: Date
     ) {}
 }
