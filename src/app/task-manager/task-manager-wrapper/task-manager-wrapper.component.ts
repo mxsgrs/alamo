@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TaskManagerFormComponent } from "../task-manager-form/task-manager-form.component";
 import { TaskManagerListComponent } from '../task-manager-list/task-manager-list.component';
 import { PageHeaderComponent } from 'components/page-header.component';
-import { ToolbarModule } from 'components/Toolbar/toolbar.module';
+import { ToolbarModule } from 'components/toolbar/toolbar.module';
 
 @Component({
   selector: 'app-task-manager-wrapper',

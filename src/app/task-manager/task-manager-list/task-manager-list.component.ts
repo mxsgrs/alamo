@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { Task } from '@models/task/task';
 import { MatListModule } from '@angular/material/list';
+import { MatCard } from '@angular/material/card';
 import { TaskStatus } from '@models/task/task-status';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-task-manager-list',
   standalone: true,
-  imports: [MatListModule, CommonModule],
+  imports: [MatListModule, CommonModule, MatCard],
   templateUrl: './task-manager-list.component.html',
   styleUrl: './task-manager-list.component.css'
 })
