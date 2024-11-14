@@ -11,8 +11,8 @@ import { MatListModule } from '@angular/material/list';
 })
 export class TaskManagerListComponent {
   tasks: Task[] = [
-    new Task(1, 'Store new data', 'Pending'),
-    new Task(2, 'Finish latest sprint', 'Completed'),
-    new Task(3, 'Daily meeting', 'In Progress')
+    new Task(1, 'Store new data', 'Extract data from Excel files and load it.', 'Pending'),
+    new Task(2, 'Finish latest sprint', 'Sprint #19349 need to be finished by the end of the week.', 'Completed'),
+    new Task(3, 'Daily meeting', 'Contact everyone and have a talk.', 'In Progress')
   ]
 }
