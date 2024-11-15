@@ -24,7 +24,7 @@ export class TaskFormComponent {
 
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
-      id: [1],
+      id: [crypto.randomUUID()],
       name: ['', Validators.required],
       description: ['', Validators.required],
       status: [TaskStatus.Pending],
@@ -33,7 +33,6 @@ export class TaskFormComponent {
   }
 
   onSubmit() {
-    console.log('submit');
     this.taskService.addTask(this.form.value);
     this._snackBar.open('Your task was added to the list!', 'Ok', {
       duration: 3000

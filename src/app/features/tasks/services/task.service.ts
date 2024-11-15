@@ -9,9 +9,9 @@ import { Observable } from 'rxjs';
 })
 export class TaskService {
   private tasksSubject = new BehaviorSubject<Task[]>([
-    new Task(1, 'Store new data', 'Extract data from Excel files and load it.', TaskStatus.Pending, new Date(2024, 4, 2)),
-    new Task(2, 'Finish latest sprint', 'Sprint #19349 needs to be finished by the end of the week.', TaskStatus.Completed, new Date(2024, 6, 28)),
-    new Task(3, 'Daily meeting', 'Contact everyone and have a talk.', TaskStatus.InProgress, new Date(2024, 1, 17))
+    new Task(crypto.randomUUID(), 'Store new data', 'Extract data from Excel files and load it.', TaskStatus.Pending, new Date(2024, 4, 2)),
+    new Task(crypto.randomUUID(), 'Finish latest sprint', 'Sprint #19349 needs to be finished by the end of the week.', TaskStatus.Completed, new Date(2024, 6, 28)),
+    new Task(crypto.randomUUID(), 'Daily meeting', 'Contact everyone and have a talk.', TaskStatus.InProgress, new Date(2024, 1, 17))
   ]);
   
   public tasks$: Observable<Task[]> = this.tasksSubject.asObservable();
