@@ -6,8 +6,8 @@
     <mat-form-field class="example-full-width">
       <mat-label>Status</mat-label>
       <mat-select id="status" formControlName="status">
-        @for(trackStatus of taskStatuses; track trackStatus; let i = $index) {
-          <mat-option [value]="i">{{trackStatus}}</mat-option>
+        @for(trackStatus of taskStatuses; track trackStatus) {
+          <mat-option [value]="trackStatus">{{trackStatus}}</mat-option>
         }
       </mat-select>
     </mat-form-field>
@@ -16,6 +16,6 @@
       <textarea matInput id="description" formControlName="description"></textarea>
     </mat-form-field>
     <div class="submit-container">
-      <button type="submit" mat-flat-button>Add</button>
+      <button type="submit" [disabled]="!form.valid" mat-flat-button>Add</button>
     </div>
   </form>

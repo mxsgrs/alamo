@@ -1,6 +1,15 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .creation-date {
     font-size: small;
     color: #6c757d;
+}
+
+.task-status {
+    font-weight: 500;
 }
 
 mat-list {
