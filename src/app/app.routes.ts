@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { TaskManagerWrapperComponent } from './task-manager/task-manager-wrapper/task-manager-wrapper.component';
+import { TaskManagerComponent } from './features/tasks/components/task-manager/task-manager.component';
 
 export const routes: Routes = [
-    {path: 'task-manager', component: TaskManagerWrapperComponent},
+    {path: 'task-manager', component: TaskManagerComponent, title: 'Task Manager | Alamo'},
 ];

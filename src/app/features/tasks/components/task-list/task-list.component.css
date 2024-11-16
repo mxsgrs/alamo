@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creation-date {
+    font-size: small;
+    color: #6c757d;
+}
+
+.task-status {
+    font-weight: 500;
+}
+
+mat-list {
+    min-width: 150px;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+mat-list-item {
+    padding: 0;
+}
+
+mat-card {
+    background-color: white;
+    padding: 1rem;
+}

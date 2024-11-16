@@ -2,9 +2,16 @@
     min-width: 150px;
     max-width: 500px;
     padding: 1rem;
-    width: 100%;
 }
 
 .example-full-width {
     width: 100%;
+}
+
+.submit-container {
+    display: flex;
+}
+
+.submit-container button {
+    margin-left: auto;
 }
